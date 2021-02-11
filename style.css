@@ -1,0 +1,145 @@
+/*Define your font styles here*/
+body{ 
+	background-color: #ffe7be;
+	color: #4c3b1a;
+	margin: 25px 50px 75px 100px;
+
+
+}
+@font-face{
+	font-family: "Christmas and Santona";
+	src: url("christmas_and_santona/christmas.ttf") format("ttf");
+}
+
+@font-face{
+	font-family: "ComicNeue-Regular";
+	src: url("Comic_Neue/ComicNeue-Regular.tff") format("ttf");
+}	
+
+
+@font-face{
+	font-family: "ComicNeue-Light";
+	src: url("Comic_Neue/ComicNeue-Light.tff") format("ttf");
+}		
+
+
+@font-face{
+	font-family: "Dawning_of_a_New_Day";
+	src: url("Dawning_of_a_New_Day/Dawning_of_a_New_Day-Regular.tff") format("ttf");
+}
+
+
+h1{
+	font-family: Christmas and Santona;
+	font-size: 100px;
+	letter-spacing: 8px;
+position: relative;
+bottom: -100px;
+
+
+}
+
+img {
+  position: relative;
+  position: absolute;
+  top: 8px;
+  right: 320px;
+  transform: rotate(630deg);
+  border-style: dotted;
+  max-width: 100%;
+}
+
+
+h2{
+	font-family: ComicNeue-Regular;
+	font-size: 30px;
+	text-decoration: #ffe7be wavy underline;
+	color: #ffe7be;
+}
+
+ul{
+	font-family: 'ComicNeue-Light', cursive;
+	font-size: 20px;
+	line-height: 32px;
+	color: #ffe7be;
+	list-style-type: circle;
+}
+
+ol{
+
+	font-family: 'ComicNeue-Light';
+	font-style: italic;
+	font-size: 25px;
+	line-height: 40px;
+	color: #ffe7be;
+}
+ol li {
+  margin: 0 0 0.5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  color:#4c3b1a;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 32px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  transform: rotate(-10deg);
+  background: #ffe7be;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 0 #999;
+}
+
+.fire {
+  background-color: #ff0000;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+  padding-right: 5px;
+}
+
+.fire:hover {
+  cursor: pointer;
+  background: linear-gradient(270deg, #ff8400, #ffd736, #fc4128,#ffea00,#ff8400);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: slideBackground 2s ease infinite;
+  -moz-animation: slideBackground 2s ease infinite;
+  animation: slideBackground 2s ease infinite;
+}
+.baking {
+  font-style: italic;
+  background-color: #f0b837;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.baking:hover:after {
+  content: url(images/baking.jpg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+p{
+	font-family: 'Dawning of a New Day', cursive;
+	font-size: 25px;
+	color: #ffe7be;
+
+}
+
+div {
+  border: 1px solid black;
+  padding: 25px 50px;
+  background-color:  #654321 ;
+}
+
+/*Style your page here*/
